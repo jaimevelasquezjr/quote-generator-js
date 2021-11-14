@@ -5,15 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JONGV.JS | Starter Template</title>
+  <title>Quote Generator JavaScript | JONGV.JS</title>
   <link rel="shortcut icon" href="./img/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <i class="fas fa-ad"></i>
+  <h1 class="header-lg">😉 Quote Generator HTML, CSS & JavaScript 😉</h1>
 
+  <div class="quote-container" id="quote-container">
+    <div class="quote-text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quote"></span>
+    </div>
+    <div class="quote-author">
+      <span id="author"></span>
+    </div>
+    <div class="button-container">
+      <button class="twitter-button" id="twitter" title="Tweet This!"><i class="fab fa-twitter"></i> Tweet!</button>
+      <button id="new-quote">New Quote</button>
+    </div>
+  </div>
+
+  <div id="loader" class="overlay">
+    <div class="overlay__inner">
+      <div class="overlay__content"><span class="spinner"></span></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed & Developed by <a href="https://github.com/jongvelasquez" target="_blank">Jong Velasquez</a></p>
+  </footer>
+
+  <script src="./localQuotes.js"></script>
   <script src="./script.js"></script>
 
 </body>
