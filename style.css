@@ -164,10 +164,14 @@ footer {
     font-size: 85%;
   }
 
+  body {
+    min-height: 90vh;
+  }
+
   h1 span {
     display: block;
   }
-  
+
   .quote-container {
     margin: auto 0.625rem;
   }
